@@ -4,11 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tunnel": "cloudflared tunnel --url http://localhost:3000"
   },
   "devDependencies": {
-    "vite": "^5.0.8"
+    "vite": "^6.3.2",
+    "cloudflared": "^0.5.1"
+  },
+  "dependencies": {
+    "@discord/embedded-app-sdk": "^2.0.0"
   }
 }

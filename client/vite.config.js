@@ -15,5 +15,6 @@ export default defineConfig({
     hmr: {
       clientPort: 443,
     },
+    allowedHosts: ['awarded-monsters-americas-frost.trycloudflare.com'],
   },
 });
